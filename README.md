@@ -1,2 +1,2 @@
 # Python
- Códigos em Python
+ Repositório de códigos em Python.
