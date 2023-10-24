@@ -16,7 +16,14 @@ tabela = pd.read_excel("C:/Users/gabriel.marchesi/Desktop/Estatística/Python/py
 print(tabela)
 
 # Passo 2 - Pegar um panorama geral sobre a sua base de dados
+faturamento_total = tabela["Valor Final"].sum()
+print(faturamento_total)
 
 # Passo 3 - Começar sua análise Top->Down
+# faturamento por loja
+faturamento_por_loja = tabela[["ID Loja", "Valor Final"]].groupby("ID Loja").sum()
+print(faturamento_por_loja)
 
 # Passo 4 - Entrar no detalhe para entender
+faturamento_por_produto = tabela[["ID Loja", "Produto", "Valor Final"]].groupby(["ID Loja", "Produto"]).sum()
+print(faturamento_por_produto)
