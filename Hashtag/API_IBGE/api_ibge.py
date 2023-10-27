@@ -20,4 +20,3 @@ Domicilios = int(informacoes_D[0]['resultados'][0]['series'][0]['serie']['2022']
 
 print(f'O valor total da população de Porto Alegre é {Populacao:,}.')
 print(f'O número total de domicílios em Porto Alegre é de {Domicilios:,}')
-
