@@ -1,1 +1,0 @@
-# Crie um programa que leia um número real qualuqer pelo teclado e mostre na tela a sua porção inteira.
